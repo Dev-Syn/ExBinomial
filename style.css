@@ -6,7 +6,8 @@ main {
     align-items: center;
     position: absolute;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0, 212, 255,1) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #330979 35%, rgba(0,212,255,1) 100%);
 }
 .box div {
     position: absolute;
@@ -90,7 +91,7 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    background: #993399;
+    background: #780ddd;
     width: 400px;
     height: 600px;
     align-items: center;
