@@ -1,5 +1,7 @@
 const calcular = document.getElementById("calcular");
 
+
+//Fazendo o calculo de um número fatorial e retornando o resultado
 function fatorial(numero){
     let resultado = 1;
 
@@ -10,6 +12,8 @@ function fatorial(numero){
     return resultado
 }
 
+
+//Fazendo o calculo de um número binomial seguindo a fórmula e retornando o resultado
 function nBinomial(){
 
     const n = parseInt(document.getElementById("n").value); //número de ensaios
@@ -25,6 +29,8 @@ function nBinomial(){
     return numBinomial;
 }
 
+
+//Realizando o formula geral, ee
 function resolver() {
 
     const n = parseInt(document.getElementById("n").value); //número de ensaios
@@ -33,11 +39,11 @@ function resolver() {
 
     const numBinominal = nBinomial();
 
-    const result = numBinominal * ((p ** k) * (1 - p) ** (n - k));
+    const result = (numBinominal * ((p ** k) * (1 - p) ** (n - k))).toFixed(4);
 
     const resultSet = (result * 100).toFixed(2);
 
-    resultado.textContent = `A probabilidade de sucesso é de: ${resultSet} %.`;
+    resultado.textContent = `A probabilidade de sucesso é de: ${result}, em porcentagem: ${resultSet} %.`;
 }
 
 calcular.addEventListener("click", resolver);
